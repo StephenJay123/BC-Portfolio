@@ -1,255 +1,145 @@
 @font-face {
   font-family: "Coolvetica";
-  src: url("Fonts/coolvetica\ rg.otf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  src: url("Fonts/coolvetica rg.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Monsterrat";
   src: url("Fonts/Montserrat-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
   font-family: "MonsterratLight";
   src: url("Fonts/Montserrat-Light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-    background-color: rgb(2, 0, 10);
+  background-color: rgb(2, 0, 10);
+  margin: 0;
+  color: white;
 }
 
 .Main {
-    font-family: 'Monsterrat', 'sans-serif';
-    color: white;
+  font-family: 'Monsterrat', sans-serif;
 }
 
 .Light {
-    font-family: 'MonsterratLight', 'sans-serif';
-    color: white;
+  font-family: 'MonsterratLight', sans-serif;
+}
+
+/* ---------- Nav ---------- */
+#Top {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  background: rgba(20, 20, 30, 0.4);
+  backdrop-filter: blur(7.5px);
+  padding: 0.5em 1em;
+  z-index: 1000;
 }
 
 .TopButton {
-    font-family: 'MonsterratLight', 'sans-serif';
-    background-color: transparent;
-    border: none;
-    font-size: 1.5em;
-    color: white;
-    transition: color 0.3s ease;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  min-height: 44px;
 }
 
 .TopButton:hover {
-    cursor: pointer;
-    color: #0084ff;
+  color: #0084ff;
 }
 
-.Circle {
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    border-radius:50%;
+/* ---------- Page Layout ---------- */
+#MainText {
+  text-align: center;
+  font-size: clamp(2rem, 6vw, 4rem);
+  margin: 1em 0;
 }
 
-#Name {
-    margin-top: 3.5em;
-    text-align: center;
-    font-size: 5em;
+#Films {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding: 0 1em 3em;
 }
 
-#Title {
-    text-align: center;
-    font-size: 3.5em;
-    margin-top: -1.6em;
-}
-
-#Location {
-    justify-content: center;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    margin-top: -5em;
-}
-
-#Pin {
-    height: 2em;
-    margin-right: .5em;
-    margin-top: -.1em;
-}
-
-#LocationText {
-    font-size: 1.75em;
-}
-
-#Top {
-    position: sticky;
-    width: 100%;
-    top: 0;
-    justify-content: center;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    margin-top: .1em;
-    z-index: 1000;
-    gap: 1em;
-
-
-    background: rgba(255, 255, 255, 0);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur(7.5px);
-}
-
-#Circle1 {
-    margin-left: 50%;
-    margin-top: 24em;
-    box-shadow: 0 0 50em 2em #fff, 0 0 50em 4em #001aff, 0 0 80em 7em #0077ff;
-}
-
-#FeaturedFilm {
-    margin: auto;
-    width: 80em;
-    height: 45em;
-    background-color: transparent;
-    border-radius: 2em;
-    box-shadow: 0 0 5em #0059ff;
-    z-index: 2;
-}
-
+/* ---------- Film Boxes ---------- */
 #FilmBox {
-    margin: auto;
-    display: flex;
-    width: 90em;
-    height: 30em;
-    background-color: transparent;
-    border-radius: 2em;
-    box-shadow: 0 0 5em #0059ff;
-    z-index: 2;
-    margin-bottom: 8em;
-}
-
-#FeaturedText {
-    text-align: center;
-    font-size: 3em;
-    margin-top: 8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border-radius: 1em;
+  box-shadow: 0 0 2em #0040ff55;
+  padding: 1em;
+  max-width: 90rem;
+  margin: auto;
 }
 
 #Info {
-    margin: auto;
-    justify-content: center;
-    margin-top: -5em;
-    width: 50%;
-}
-
-#About {
-    margin: auto;
-    width: 50%;
-}
-
-#Contact {
-    margin: auto;
-    width: 50%;
+  text-align: center;
+  width: 100%;
 }
 
 #FilmTitle {
-    text-align: center;
-    font-size: 5em;
-}
-
-#FeaturedFilmSubtext { 
-    text-align: left;
-    font-size: 1.5em;
-    margin-top: -3em;
-}
-
-#FilmSubtext { 
-    line-clamp: 5;
-    text-align: left;
-    font-size: 1em;
-    margin-top: -1em;
-    padding-left: .5em;
-    overflow: scroll;
-    display: -webkit-box;
-    height: 22em;
-}
-
-#Film {
-    height: 100%;
-    border-radius: 2em;
-    width: auto;
-}
-
-#FilmVideo {
-    height: 100%;
-    border-top-right-radius: 2em;
-    border-bottom-right-radius: 2em;
-    width: auto;
-}
-
-#AllFilms {
-    display: flex;
-    margin: auto;
-    margin-top: 1.25em;
-    background-color: transparent;
-    font-size: 4em;
-    color: white;
-    border-radius: .5em;
-    width: 8em;
-    padding-left: .5em;
-    text-align: center;
-    border: none;
-    outline: none;
-    box-shadow: 0 0 0.4em 0em #0010aa, 0 0 0.6em 0.01em #0022ff, 0 0 0.8em 0.01em #000a33;
-    transition: color 0.3s ease;
-}
-
-#AllFilms:hover {
-    cursor: pointer;
-    color: #0084ff;
-}
-
-#AboutText {
-    margin-top: 1em;
-    text-align: center;
-    font-size: 5em;
-}
-
-#AboutSubtext {
-    margin-top: -3em;
-    font-size: 1.5em;
-}
-
-#ContactText {
-    margin-top: 1em;
-    text-align: center;
-    font-size: 5em;
-}
-
-#ContactSubtext {
-    margin-top: -3em;
-    font-size: 1.5em;
-}
-
-#Email {
-    color: #0084ff;
-}
-
-#Instagram {
-    color: #0084ff;
-}
-
-#MainText {
-    margin-top: 0em;
-    text-align: center;
-    font-size: 5em;
-    margin-bottom: .5em;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  margin-bottom: 0.25em;
 }
 
 #FilmDate {
-    text-align: center;
-    font-size: 1.5em;
-    margin-top: -4em;
+  font-size: clamp(1rem, 3.5vw, 1.5rem);
+  margin-top: 0;
+}
+
+#FilmSubtext {
+  font-size: clamp(0.9rem, 3vw, 1.25rem);
+  margin-top: 0.5em;
+}
+
+/* ---------- Video ---------- */
+#FilmVideo {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 1em;
+  margin-top: 1.5em;
+  box-shadow: 0 0 1em #0022ff;
+  background: black;
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (min-width: 768px) {
+  #FilmBox {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  #Info {
+    width: 50%;
+    padding: 1em;
+  }
+
+  #FilmVideo {
+    width: 50%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
