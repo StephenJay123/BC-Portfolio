@@ -1,62 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles.css">
-  <title>Ben Crawley</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Ben Crawley</title>
 </head>
 <body>
 
-  <div id="Top">
-    <button class="TopButton" id="HomeButton">Home</button>
-    <button class="TopButton" id="FilmsButton" onclick="location.href='films.html'">Films</button>
-    <button class="TopButton" id="AboutButton" onclick="location.hash='#About'">About</button>
-    <button class="TopButton" id="ContactButton" onclick="location.hash='#Contact'">Contact</button>
-  </div>
-
-  <div class="Circle" id="Circle1" aria-hidden="true"></div>
-
-  <div id="Information">
-    <p id="Name" class="Main">Ben Crawley</p>
-    <p id="Title" class="Light">Filmographer</p>
-
-    <div id="Location">
-      <img id="Pin" src="Images/Pin.png" alt="">
-      <p id="LocationText" class="Light">Vancouver, BC</p>
-    </div>
-  </div>
-
-  <div id="Films">
-    <p id="FeaturedText" class="Light">Featured Film</p>
-
-    <div id="Info">
-      <p id="FilmTitle" class="Main">BISOU</p>
-      <p id="FeaturedFilmSubtext" class="Light">Insert Subtext.</p>
+    <div id="Top">
+        <button class="TopButton" id="HomeButton">Home</button>
+        <button class="TopButton" id="FilmsButton">Films</button>
+        <button class="TopButton" id="AboutButton">About</button>
+        <button class="TopButton" id="ContactButton">Contact</button>
     </div>
 
-    <div id="FeaturedFilm">
-      <video id="Film" controls playsinline preload="metadata" poster="Images/bisou-poster.jpg">
-        <source src="Videos/BISOU.mp4" type="video/mp4">
-      </video>
+    <div class="Circle" id="Circle1"></div>
+
+    <div id="Information">
+        <p id="Name" class="Main">Ben Crawley</p>
+        <p id="Title" class="Light">Filmographer</p>
+
+        <div id="Location">
+            <img id="Pin" src="Images/Pin.png">
+            <p id="LocationText" class="Light">Vancouver, BC</p>
+        </div>
     </div>
 
-    <button id="AllFilms" class="Light" onclick="location.href='films.html'">View All Films</button>
-  </div>
+    <div id="Films">
+        <p id="FeaturedText" class="Light">Featured Film</p>
 
-  <div id="About">
-    <p id="AboutText" class="Main">About Me</p>
-    <p id="AboutSubtext" class="Light">Insert About.</p>
-  </div>
+        <div id="Info">
+            <p id="FilmTitle" class="Main">BISOU</p>
+            <p id="FeaturedFilmSubtext" class="Light">Insert Subtext.</p>
+        </div>
 
-  <div id="Contact">
-    <p id="ContactText" class="Main">Contact Me</p>
-    <p id="ContactSubtext" class="Light">
-      Gmail: <a href="mailto:bcrawley1018@gmail.com" id="Email">bcrawley1018@gmail.com</a><br>
-      Instagram: <a href="https://www.instagram.com/bencrawley.film/" id="Instagram">@bencrawley.film</a>
-    </p>
-  </div>
+        <div id="FeaturedFilm">
+            <video id="Film" width="1920" height="1080" controls>
+                <source src="Videos/BISOU.mp4" type="video/mp4">
+            </video>
+        </div>
 
-  <script src="scripts.js"></script>
+        <button id="AllFilms" class="Light">View All Films</button>
+    </div>
+
+    <div id="About">
+        <p id="AboutText" class="Main">About Me</p>
+        <p id="AboutSubtext" class="Light">Insert About.</p>
+    </div>
+
+    <div id="Contact">
+        <p id="ContactText" class="Main">Contact Me</p>
+        <p id="ContactSubtext" class="Light">Gmail: <a href="mailto:bcrawley1018@gmail.com" id="Email">bcrawley1018@gmail.com</a><br>Instagram: <a href="https://www.instagram.com/bencrawley.film/" id="Instagram">@bencrawley.film</a></p>
+    </div>
+
+     <script src="scripts.js"></script> 
 </body>
-</html>
+</html> 
