@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles.css">
-  <title>Ben Crawley - Films</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Ben Crawley - Films</title>
 </head>
 <body>
-  <div id="Top">
-    <button class="TopButton" id="HomeButton" onclick="location.href='index.html'">Home</button>
-  </div>
-
-  <p id="MainText" class="Main">Films</p>
-
-  <div id="Films">
-    <div id="FilmBox">
-      <div id="Info">
-        <p id="FilmTitle" class="Main">BISOU</p>
-        <p id="FilmDate" class="Light">November 4th, 2025</p>
-        <p id="FilmSubtext" class="Light">Insert Subtext</p>
-      </div>
-      <video id="FilmVideo" controls playsinline preload="metadata" poster="Images/bisou-poster.jpg">
-        <source src="Videos/BISOU.mp4" type="video/mp4">
-      </video>
+    <div id="Top">
+        <button class="TopButton" id="HomeButton">Home</button>
     </div>
-  </div>
 
-  <div id="Films">
-    <div id="FilmBox">
-      <div id="Info">
-        <p id="FilmTitle" class="Main">CALL</p>
-        <p id="FilmDate" class="Light">June 20th, 2025</p>
-        <p id="FilmSubtext" class="Light">Insert Subtext</p>
-      </div>
-      <video id="FilmVideo" controls playsinline preload="metadata" poster="Images/call-poster.jpg">
-        <source src="Videos/CALL.mp4" type="video/mp4">
-      </video>
+    <p id="MainText" class="Main">Films</p>
+
+    <div id="Films">
+        <div id="FilmBox">
+            <div id="Info">
+                <p id="FilmTitle" class="Main">BISOU</p>
+                <p id="FilmDate" class="Light">November 4th, 2025</p>
+                <p id="FilmSubtext" class="Light">Insert Subtext</p>
+            </div>
+
+            <video id="FilmVideo" width="1920" height="1080" controls>
+                <source src="Videos/BISOU.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
-  </div>
 
-  <div id="Films">
-    <div id="FilmBox">
-      <div id="Info">
-        <p id="FilmTitle" class="Main">Mood</p>
-        <p id="FilmDate" class="Light">April 30th, 2025</p>
-        <p id="FilmSubtext" class="Light">Insert Subtext</p>
-      </div>
-      <video id="FilmVideo" controls playsinline preload="metadata" poster="Images/mood-poster.jpg">
-        <source src="Videos/Mood.mp4" type="video/mp4">
-      </video>
+    <div id="Films">
+        <div id="FilmBox">
+            <div id="Info">
+                <p id="FilmTitle" class="Main">CALL</p>
+                <p id="FilmDate" class="Light">June 20th, 2025</p>
+                <p id="FilmSubtext" class="Light">Insert Subtext</p>
+            </div>
+
+            <video id="FilmVideo" width="1920" height="1080" controls>
+                <source src="Videos/CALL.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
-  </div>
 
-  <script src="scripts.js"></script>
+    <div id="Films">
+        <div id="FilmBox">
+            <div id="Info">
+                <p id="FilmTitle" class="Main">Mood</p>
+                <p id="FilmDate" class="Light">April 30th, 2025</p>
+                <p id="FilmSubtext" class="Light">Insert Subtext</p>
+            </div>
+
+            <video id="FilmVideo" width="1920" height="1080" controls>
+                <source src="Videos/Mood.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+     <script src="scripts.js"></script> 
 </body>
-</html>
+</html> 
