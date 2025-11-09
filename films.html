@@ -7,9 +7,8 @@
   <title>Ben Crawley - Films</title>
 </head>
 <body>
-
   <div id="Top">
-    <button class="TopButton" id="HomeButton" onclick="window.location.href='index.html'">Home</button>
+    <button class="TopButton" id="HomeButton" onclick="location.href='index.html'">Home</button>
   </div>
 
   <p id="MainText" class="Main">Films</p>
@@ -21,7 +20,7 @@
         <p id="FilmDate" class="Light">November 4th, 2025</p>
         <p id="FilmSubtext" class="Light">Insert Subtext</p>
       </div>
-      <video id="FilmVideo" controls playsinline>
+      <video id="FilmVideo" controls playsinline preload="metadata" poster="Images/bisou-poster.jpg">
         <source src="Videos/BISOU.mp4" type="video/mp4">
       </video>
     </div>
@@ -34,7 +33,7 @@
         <p id="FilmDate" class="Light">June 20th, 2025</p>
         <p id="FilmSubtext" class="Light">Insert Subtext</p>
       </div>
-      <video id="FilmVideo" controls playsinline>
+      <video id="FilmVideo" controls playsinline preload="metadata" poster="Images/call-poster.jpg">
         <source src="Videos/CALL.mp4" type="video/mp4">
       </video>
     </div>
@@ -47,7 +46,7 @@
         <p id="FilmDate" class="Light">April 30th, 2025</p>
         <p id="FilmSubtext" class="Light">Insert Subtext</p>
       </div>
-      <video id="FilmVideo" controls playsinline>
+      <video id="FilmVideo" controls playsinline preload="metadata" poster="Images/mood-poster.jpg">
         <source src="Videos/Mood.mp4" type="video/mp4">
       </video>
     </div>
