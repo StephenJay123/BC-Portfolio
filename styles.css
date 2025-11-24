@@ -40,6 +40,10 @@ body {
     font-size: 1.5em;
     color: white;
     transition: color 0.3s ease;
+
+    @media (max-width: 1024px) {
+        font-size: 3em;
+    }
 }
 
 .TopButton:hover {
@@ -52,12 +56,22 @@ body {
     width: 0px;
     height: 0px;
     border-radius:50%;
+
+    @media (max-width: 1024px) {
+        top: 26%;
+    }
 }
 
 #Name {
     margin-top: 3.5em;
     text-align: center;
     font-size: 5em;
+
+    
+    @media (max-width: 1024px) {
+        margin-top: 10em;
+        margin-bottom: 1em;
+    }
 }
 
 #Title {
@@ -72,6 +86,11 @@ body {
     margin: auto;
     align-items: center;
     margin-top: -5em;
+    margin-bottom: 30em;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 68em;
+    }
 }
 
 #Pin {
@@ -117,6 +136,26 @@ body {
     border-radius: 2em;
     box-shadow: 0 0 5em #0059ff;
     z-index: 2;
+
+    @media (max-width: 1024px) {
+        width: 40em;
+        height: 22.5em;
+    }
+}
+
+#FeaturedFilm1 {
+    margin: auto;
+    width: 80em;
+    height: 45em;
+    background-color: transparent;
+    border-radius: 2em;
+    box-shadow: 0 0 5em #0059ff;
+    z-index: 2;
+
+    @media (max-width: 1024px) {
+        width: 50em;
+        height: 28.125em;
+    }
 }
 
 #FilmBox {
@@ -137,10 +176,23 @@ body {
     margin-top: 8em;
 }
 
+#FeaturedText2 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 0.5em;
+}
+
 #Info {
     margin: auto;
     justify-content: center;
     margin-top: -5em;
+    width: 50%;
+}
+
+#Info1 {
+    margin: auto;
+    justify-content: center;
+    margin-top: 2em;
     width: 50%;
 }
 
@@ -204,6 +256,10 @@ body {
     outline: none;
     box-shadow: 0 0 0.4em 0em #0010aa, 0 0 0.6em 0.01em #0022ff, 0 0 0.8em 0.01em #000a33;
     transition: color 0.3s ease;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 15em;
+    }
 }
 
 #AllFilms:hover {
@@ -220,6 +276,10 @@ body {
 #AboutSubtext {
     margin-top: -3em;
     font-size: 1.5em;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 75em;
+    }
 }
 
 #ContactText {
