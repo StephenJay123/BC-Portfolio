@@ -63,7 +63,7 @@ body {
 }
 
 #Name {
-    margin-top: 3.5em;
+    margin-top: 4.5em;
     text-align: center;
     font-size: 5em;
 
@@ -86,7 +86,7 @@ body {
     margin: auto;
     align-items: center;
     margin-top: -5em;
-    margin-bottom: 30em;
+    margin-bottom: 25em;
 
     @media (max-width: 1024px) {
         margin-bottom: 68em;
@@ -124,8 +124,13 @@ body {
 
 #Circle1 {
     margin-left: 50%;
-    margin-top: 24em;
+    margin-top: 28em;
     box-shadow: 0 0 50em 2em #fff, 0 0 50em 4em #001aff, 0 0 80em 7em #0077ff;
+    z-index: -1;
+
+    @media (max-width: 1024px) {
+        margin-top: 24em;
+    }
 }
 
 #FeaturedFilm {
