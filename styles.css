@@ -120,7 +120,7 @@ body {
 #Circle1 {
     margin-left: 50%;
     margin-top: 25em;
-    box-shadow: 0 0 714px 29px #fff, 0 0 714px 57px #001aff, 0 0 1142px 100px #0077ff;
+    box-shadow: 0 0 714px 40px #fff, 0 0 714px 77px #001aff, 0 0 1142px 120px #0077ff;
     z-index: 1;
 
     @media (max-width: 1024px) {
