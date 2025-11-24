@@ -121,7 +121,7 @@ body {
     margin-left: 50%;
     margin-top: 25em;
     box-shadow: 0 0 714px 40px #fff, 0 0 714px 77px #001aff, 0 0 1142px 120px #0077ff;
-    z-index: 1;
+    z-index: -1;
 
     @media (max-width: 1024px) {
         margin-top: 56em;
@@ -313,3 +313,4 @@ body {
     font-size: 1.5em;
     margin-top: -4em;
 }
+
