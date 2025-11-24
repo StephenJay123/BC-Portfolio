@@ -56,10 +56,6 @@ body {
     width: 0px;
     height: 0px;
     border-radius:50%;
-
-    @media (max-width: 1024px) {
-        top: 26%;
-    }
 }
 
 #Name {
@@ -128,7 +124,7 @@ body {
     z-index: -1;
 
     @media (max-width: 1024px) {
-        margin-top: 24em;
+        margin-top: 56em;
     }
 }
 
